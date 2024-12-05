@@ -1,0 +1,112 @@
+###
+GET http://localhost:3001/api/users
+# content-type: application/json
+# Authorization: Bearer 
+###
+POST http://localhost:3001/api/blog
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY3NTFiNTBhMWQ3ODcyNmFiYTNiMWMwYiIsImlhdCI6MTczMzQwODE1NX0.CaT9F2A4RaiyK0ekyTE-cQnN0O-SI0uZkGf-rGPGNSM
+
+{
+    "title": "Hi Herizon 5",
+    "author": "User_Fang",
+    "url":"123",
+    "likes":5}
+
+# 
+###
+DELETE http://localhost:3001/api/blog/6733783b2456d288c82d4ce1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJpZCI6IjY3MzM3NmU2MjQ1NmQyODhjODJkNGNjOCIsImlhdCI6MTczMTQzMjU5M30.6ns5Mo11jsVWBloB0GP4Np65KPLj9LGYC0_DAyaHYzY
+
+###
+PUT http://localhost:3001/api/blog/6728eb662b3ed8bbe065e826
+content-type: application/json
+Authorization: Bearer 
+
+{
+    "title": "blog2",
+    "author": "Fang",
+    "url":"123",
+    "likes":50
+}
+
+###
+# USER
+GET http://localhost:3001/api/users
+
+###
+POST http://localhost:3001/api/users
+content-type: application/json
+
+{
+    "username": "root",
+    "name": "Superuser",
+    "password": "salainen"
+}
+
+###
+POST http://localhost:3001/api/users
+content-type: application/json
+
+{
+    "username": "user",
+    "name": "user",
+    "password": "123456"
+}
+
+###
+POST http://localhost:3001/api/users
+content-type: application/json
+
+{
+    "username": "Anni",
+    "name": "Anni",
+    "password": "123456"
+}
+###
+POST http://localhost:3001/api/users
+content-type: application/json
+
+{
+    "username": "user",
+    "name": "user_fang",
+    "password": "123456"
+}
+
+### 
+#Login
+POST http://localhost:3001/api/login
+content-type: application/json
+
+{
+    "username": "root",
+    "password": "salainen"
+}
+
+### 
+#Login
+POST http://localhost:3001/api/login
+content-type: application/json
+
+{
+    "username": "user",
+    "password": "123456"
+}
+
+###
+POST http://localhost:3001/api/comments
+Content-Type: application/json
+
+{
+  "content": "usercomment adding",
+  "blog": "6749d7027ce927af6f1f37af"
+}
+
+###
+POST http://localhost:3001/api/comments/6749d7027ce927af6f1f37af
+Content-Type: application/json
+
+{
+  "content": "new comment API testing"
+}

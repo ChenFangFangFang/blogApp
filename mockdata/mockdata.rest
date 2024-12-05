@@ -1,0 +1,122 @@
+@baseUrl = http://localhost:3001
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY3NTFiNTBhMWQ3ODcyNmFiYTNiMWMwYiIsImlhdCI6MTczMzQwODE1NX0.CaT9F2A4RaiyK0ekyTE-cQnN0O-SI0uZkGf-rGPGNSM
+
+###
+POST {{baseUrl}}/api/blog
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "The Future of Tech",
+    "author": "Alice",
+    "url": "https://example.com/future-tech",
+    "likes": 100
+}
+
+###
+POST {{baseUrl}}/api/blog
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "Exploring Space: A New Frontier",
+    "author": "Bob",
+    "url": "https://example.com/space-frontier",
+    "likes": 150
+}
+
+###
+POST {{baseUrl}}/api/blog
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "10 Tips for Learning Programming",
+    "author": "Charlie",
+    "url": "https://example.com/learn-programming",
+    "likes": 50
+}
+
+###
+POST {{baseUrl}}/api/blog
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "Healthy Living in a Digital Age",
+    "author": "Dana",
+    "url": "https://example.com/healthy-living",
+    "likes": 200
+}
+
+###
+POST {{baseUrl}}/api/blog
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "The Rise of AI",
+    "author": "Eve",
+    "url": "https://example.com/rise-of-ai",
+    "likes": 300
+}
+
+###
+POST {{baseUrl}}/api/blog
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "Traveling on a Budget",
+    "author": "Frank",
+    "url": "https://example.com/travel-budget",
+    "likes": 120
+}
+
+###
+POST {{baseUrl}}/api/blog
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "Mastering Data Science",
+    "author": "Grace",
+    "url": "https://example.com/master-data-science",
+    "likes": 250
+}
+
+###
+POST {{baseUrl}}/api/blog
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "Top 5 JavaScript Frameworks in 2024",
+    "author": "Hank",
+    "url": "https://example.com/js-frameworks-2024",
+    "likes": 80
+}
+
+###
+POST {{baseUrl}}/api/blog
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "A Beginner’s Guide to Meditation",
+    "author": "Ivy",
+    "url": "https://example.com/meditation-guide",
+    "likes": 90
+}
+
+###
+POST {{baseUrl}}/api/blog
+content-type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title": "Breaking Down Blockchain",
+    "author": "Jack",
+    "url": "https://example.com/blockchain-basics",
+    "likes": 110
+}
