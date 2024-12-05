@@ -1,5 +1,5 @@
 ###
-GET http://localhost:3001/api/users
+GET http://localhost:3001/api/blog
 # content-type: application/json
 # Authorization: Bearer 
 ###
@@ -8,91 +8,30 @@ content-type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY3NTFiNTBhMWQ3ODcyNmFiYTNiMWMwYiIsImlhdCI6MTczMzQwODE1NX0.CaT9F2A4RaiyK0ekyTE-cQnN0O-SI0uZkGf-rGPGNSM
 
 {
-    "title": "Hi Herizon 5",
+    "title": "Hi Herizon 2",
     "author": "User_Fang",
     "url":"123",
     "likes":5}
 
 # 
 ###
-DELETE http://localhost:3001/api/blog/6733783b2456d288c82d4ce1
+DELETE http://localhost:3001/api/blog/6751b7041d78726aba3b1c21
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIiLCJpZCI6IjY3MzM3NmU2MjQ1NmQyODhjODJkNGNjOCIsImlhdCI6MTczMTQzMjU5M30.6ns5Mo11jsVWBloB0GP4Np65KPLj9LGYC0_DAyaHYzY
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY3NTFiNTBhMWQ3ODcyNmFiYTNiMWMwYiIsImlhdCI6MTczMzQxMjk5N30.fflksYMCjMkl8T-o6mqCFU07sOxsFGgQrSChp5SjVJk
 ###
-PUT http://localhost:3001/api/blog/6728eb662b3ed8bbe065e826
+PUT http://localhost:3001/api/blog/6751b7061d78726aba3b1c25
 content-type: application/json
 Authorization: Bearer 
 
 {
-    "title": "blog2",
+    "title": "try to update",
     "author": "Fang",
-    "url":"123",
-    "likes":50
+    "url":"1234",
+    "likes":500
 }
 
-###
-# USER
-GET http://localhost:3001/api/users
 
-###
-POST http://localhost:3001/api/users
-content-type: application/json
 
-{
-    "username": "root",
-    "name": "Superuser",
-    "password": "salainen"
-}
-
-###
-POST http://localhost:3001/api/users
-content-type: application/json
-
-{
-    "username": "user",
-    "name": "user",
-    "password": "123456"
-}
-
-###
-POST http://localhost:3001/api/users
-content-type: application/json
-
-{
-    "username": "Anni",
-    "name": "Anni",
-    "password": "123456"
-}
-###
-POST http://localhost:3001/api/users
-content-type: application/json
-
-{
-    "username": "user",
-    "name": "user_fang",
-    "password": "123456"
-}
-
-### 
-#Login
-POST http://localhost:3001/api/login
-content-type: application/json
-
-{
-    "username": "root",
-    "password": "salainen"
-}
-
-### 
-#Login
-POST http://localhost:3001/api/login
-content-type: application/json
-
-{
-    "username": "user",
-    "password": "123456"
-}
 
 ###
 POST http://localhost:3001/api/comments
