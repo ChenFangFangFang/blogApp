@@ -11,7 +11,7 @@ const mongoose = require("mongoose");
 const blogRouter = require("./routes/blog_route");
 const usersRouter = require("./routes/user_route");
 const loginRouter = require("./routes/login_route");
-const commentRouter = require("./controllers/comment_controller");
+const commentRouter = require("./routes/comment_route");
 mongoose.set("strictQuery", false);
 logger.info("connecting to", config.MONGODB_URI);
 

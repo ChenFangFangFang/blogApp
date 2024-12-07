@@ -32,20 +32,3 @@ Authorization: Bearer
 
 
 
-
-###
-POST http://localhost:3001/api/comments
-Content-Type: application/json
-
-{
-  "content": "usercomment adding",
-  "blog": "6749d7027ce927af6f1f37af"
-}
-
-###
-POST http://localhost:3001/api/comments/6749d7027ce927af6f1f37af
-Content-Type: application/json
-
-{
-  "content": "new comment API testing"
-}

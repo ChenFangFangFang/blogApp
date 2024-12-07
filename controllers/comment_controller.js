@@ -1,8 +1,7 @@
-const commentRouter = require("express").Router();
 const Blog = require("../models/blog_model");
 const Comment = require("../models/comment_model");
 
-commentRouter.post("/:blogId", async (request, response) => {
+const createComment = async (request, response) => {
   try {
     const { content } = request.body;
     const blogId = request.params.blogId;
@@ -25,6 +24,6 @@ commentRouter.post("/:blogId", async (request, response) => {
       .status(400)
       .json({ error: "Error saving comment", details: error.message });
   }
-});
+};
 
-module.exports = commentRouter;
+module.exports = { createComment };
