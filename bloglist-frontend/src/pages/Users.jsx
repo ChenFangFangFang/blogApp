@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { initializeUsers } from "../reducers/allUsersReducer";
 import { useEffect } from "react";
-import ShowUsers from "./ShowUsers";
+import ShowUsers from "../components/ShowUsers";
 
 const Users = () => {
   const dispatch = useDispatch();
@@ -10,7 +10,6 @@ const Users = () => {
   useEffect(() => {
     dispatch(initializeUsers());
   }, [dispatch]);
-  console.log("All users: ", users);
 
   return (
     <div>
